@@ -15,6 +15,11 @@
 <body>
 
     <?php
+        //incluimos kint (recuerda, no esta descargado en el repositorio)
+        //include 'inc/kint.phar';
+
+        //d($_POST);
+
         //controlamos el envio de la variable nombre del formulario y si es asi, que no este vacio
         //en caso afirmativo, pues mostramos un mensaje
         if (isset($_POST['nombre']) && (($_POST['nombre']) != '')) {

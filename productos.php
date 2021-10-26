@@ -16,7 +16,9 @@
     <!-- Tabla de productos -->
     <div id="productos">
         <?php
-            include 'kint.phar';
+            //incluimos la libreria kint
+            //include 'inc/kint.phar';
+
             //Conectamos a base de datos
             try {
                 $opc = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
@@ -36,7 +38,8 @@
                 $resultado = $con->query($sql);
 
                 //d($resultado->fetchAll(PDO::FETCH_ASSOC));
-
+                //!d(json_encode($resultado->fetchAll()));
+                
                 if (isset($resultado)) {
                     //por casa resultado obtenido vamos añadiendo una fila a la tabla
                     //recorremos resultado fila a fila
